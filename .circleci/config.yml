@@ -34,6 +34,9 @@ jobs:
       - run:
           name: Run Tests
           command: ./gradlew lint test
+       - add_ssh_keys:
+          fingerprints:
+            - "c9:9d:d8:4f:48:a0:75:02:f2:c0:8e:e2:e9:ff:ef:00"          
       - store_artifacts:
           path: app/build/reports
           destination: reports
