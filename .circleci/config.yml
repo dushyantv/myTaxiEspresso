@@ -4,11 +4,6 @@
 #
 version: 2
 jobs:
-deploy-job:
-    steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "c1:55:35:e2:e6:f5:67:ea:12:11:86:f0:82:9b:a5:03"
   build:
     working_directory: ~/code
     docker:
