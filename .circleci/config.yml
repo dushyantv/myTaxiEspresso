@@ -21,7 +21,7 @@ jobs:
           command: git clone --recursive git@github.com:toppr/toppr-android.git
           - add_ssh_keys:
           fingerprints:
-            - "c9:9d:d8:4f:48:a0:75:02:f2:c0:8e:e2:e9:ff:ef:00"
+            - "c1:55:35:e2:e6:f5:67:ea:12:11:86:f0:82:9b:a5:03"
       - run:
           name: Copy Licenses
           command: cp -r licenses/. $ANDROID_HOME/licenses
