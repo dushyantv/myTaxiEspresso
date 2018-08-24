@@ -19,11 +19,11 @@ jobs:
       - run:
           name: Download Repo
           command: git clone git@github.com:dushyantv/myTaxiEspresso.git
-      - run:
-          name: Copy Licenses
-          command: cp -r licenses/. $ANDROID_HOME/licenses
       - restore_cache:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
+      - run:
+          name: chmod permissions
+          command: chmod +x ./gradlew
       - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
