@@ -18,7 +18,7 @@ jobs:
       - checkout
       - run:
           name: Download Repo
-          command: git clone --recursive git@github.com:toppr/toppr-android.git
+          command: git clone git@github.com:dushyantv/myTaxiEspresso.git
       - run:
           name: Copy Licenses
           command: cp -r licenses/. $ANDROID_HOME/licenses
